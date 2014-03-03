@@ -1,4 +1,5 @@
 <?php
+set_time_limit(0);
 $socket = stream_socket_server("tcp://0.0.0.0:8000", $errno, $errstr);
 if (!$socket) {
   echo "$errstr ($errno)<br />\n";
